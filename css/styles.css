@@ -113,7 +113,7 @@ a {
   margin-right: 2rem;
 }
 .list--tick {
-  list-style-image: url(../icons/tick.svg);
+  list-style-image: url(../images/icons/tick.svg);
   padding-left: 3rem;
 }
 .list--tick .list-item {
@@ -124,4 +124,28 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--accent {
+  fill: var(--color-accent);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
+}
+.icon-container {
+  background: #f3f9fa;
+  width: 63px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
