@@ -141,6 +141,10 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon-small {
+  width: 30px;
+  height: 30px;
+}
 .icon--primary {
   fill: var(--color-primary);
 }
@@ -150,6 +154,9 @@ a {
 .icon--secondary {
   fill: var(--color-secondary);
 }
+.icon--white {
+  fill: #fff;
+}
 .icon-container {
   background: #f3f9fa;
   width: 63px;
@@ -158,6 +165,9 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* Buttons */
@@ -202,6 +212,10 @@ a {
 .btn--outline:hover {
   background: var(--color-headings);
   color: #fff;
+}
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .btn--block {
   width: 100%;
@@ -370,3 +384,79 @@ input {
     font-size: 1.6rem;
   }
 }
+
+/* Grids */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > img {
+  width: 100%;
+}
+.testimonial .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+}
+
+/* Callout */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+.callout .callout__content {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+
+/* Collapsible */
