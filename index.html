@@ -13,14 +13,12 @@
   </head>
 
   <body>
-    <div class="collapsible">
-      <header>
-        <h2>Item 1</h2>
-        <span class="icon-container">
-          <svg class="icon icon--secondary">
-            <use xlink:href="images/icons/sprite.svg#chevron"></use>
-          </svg>
-        </span>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/icons/sprite.svg#chevron"></use>
+        </svg>
       </header>
       <div class="collapsible__content">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cum
@@ -28,7 +26,21 @@
         distinctio?
       </div>
     </div>
-
+    <!-- ---------------- -->
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/icons/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cum
+        ratione laborum, cupiditate obcaecati animi commodi. Neque nemo soluta
+        distinctio?
+      </div>
+    </div>
+    <script src="js/main.js"></script>
     <!-- <div class="grid grid--1x2 grid--1x3">
       <div style="height: 100px; background: gold"></div>
       <div style="height: 100px; background: rgb(48, 123, 199)"></div>
