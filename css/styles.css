@@ -30,6 +30,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1.27rem;
+  line-height: 1.1;
 }
 p {
   margin-top: 0;
@@ -568,4 +569,11 @@ input {
   .nav__item {
     border: 0;
   }
+}
+
+/* Hero */
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
 }
