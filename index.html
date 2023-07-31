@@ -22,7 +22,17 @@
           </p>
           <a href="" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <img class="hero__image" src="images/icons/banner.png" alt="" />
+        <picture>
+          <source
+            type="images/webp"
+            srcset="images/icons/banner.webp 1x, images/icons/banner@2x.webp 2x"
+          />
+          <source
+            type="images/png"
+            srcset="images/icons/banner.png 1x, images/icons/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="images/icons/banner.png" alt="" />
+        </picture>
       </div>
     </section>
     <script src="js/main.js"></script>
