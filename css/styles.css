@@ -568,11 +568,11 @@ input {
   padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
 }
-.nav > a {
+.nav a {
   color: #d2d0db;
   transition: color 0.3s;
 }
-.nav > a:hover {
+.nav a:hover {
   color: #fff;
 }
 .nav__toggler {
